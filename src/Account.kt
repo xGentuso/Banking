@@ -1,6 +1,6 @@
 open class Account(val accountNumber: String, var balance: Double) {
 
-    fun deposit(amount: Double) {
+    open fun deposit(amount: Double) {
         if (amount > 0) {
             balance += amount
             println("Deposited $$amount. New balance: $$balance")
